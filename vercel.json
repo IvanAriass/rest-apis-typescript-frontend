@@ -9,10 +9,15 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/index.ts"
+      "dest": "/src/index.ts"
     }
   ],
   "env": {
     "NODE_ENV": "production"
+  },
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "nodejs20.x"  
+    }
   }
 }
