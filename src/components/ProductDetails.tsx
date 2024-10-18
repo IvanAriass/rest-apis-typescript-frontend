@@ -39,7 +39,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
             value={product.id}
             className={`${
               isAvailable ? "text-black" : "text-red-500"
-            } text-white rounded-lg w-full p-2 uppercase font-bold text-xs text-center border border-black-100 hover:cursor-pointer hover:shadow-md hover:transition-all duration-300 `}
+            } rounded-lg w-full p-2 uppercase font-bold text-xs text-center border border-black-100 hover:cursor-pointer hover:shadow-md hover:transition-all duration-300 `}
           >
             {isAvailable ? "Disponible" : "No Disponible"}
           </button>
